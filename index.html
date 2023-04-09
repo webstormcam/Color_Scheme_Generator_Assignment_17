@@ -11,10 +11,10 @@
 <body>
   <main>
     <section class="picking-area">
-    <form action="">
+    <form id="formOfInfo" action="">
       <input class="color-picker" id="colorPicker" type="color" value="#F55A5A">
-      <select name="scheme" id="scheme">
-        <option value="monochrome">Monochrome</option>
+      <select class="select-style" name="scheme" id="scheme">
+        <option selected value="monochrome">Monochrome</option>
         <option value="monochrome-dark">Monochrome-dark</option>
         <option value="monochrome-light">Monochrome-light</option>
         <option value="analogic">Analogic</option>
@@ -22,7 +22,7 @@
         <option value="analogic-complement">Analogic-complement</option>
         <option value="triad">Triad</option>
       </select>
-      <button>Get Color Scheme</button>
+      <button class="select-style">Get Color Scheme</button>
      </form>
     </section>
    <main>

@@ -5,6 +5,7 @@
 .color-picker{
     width: 62px;
     height: 42px;
+    cursor: pointer;
 }
 
 main{
@@ -17,15 +18,25 @@ select{
     width: 100%;
     max-width: 312px;
     margin: 0em 1em;
+    padding: 0em 1em;
+    cursor: pointer;
+}
+
+.select-style{
+    background-color: #ffffff;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5em;
 }
 
 button{
     font-size: 0.75rem;
+    cursor: pointer;
 }
 
 .picking-area{
     width: 100%;
     max-width: 550px;
+    
 }
 
 form{
