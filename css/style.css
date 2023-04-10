@@ -54,3 +54,7 @@ form{
     justify-content: space-between;
     margin-top: 1rem;
 }
+
+.color-grid{
+    display: grid;
+}
