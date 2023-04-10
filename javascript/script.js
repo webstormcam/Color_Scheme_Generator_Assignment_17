@@ -1,6 +1,8 @@
 
 let colorPicked = document.getElementById('colorPicker')
 let scheme = document.getElementById('scheme')
+let gridItems = document.getElementsByClassName('grid-item')
+
 
 
 /// Will Accept the values that are given
@@ -8,10 +10,13 @@ function renderColors(colorHex,pickedSelection){
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorHex}&mode=${pickedSelection}`)
       .then(res => res.json())
       .then(data =>{
-        console.log(data.colors)
-        for(const color of data.colors){
-            console.log(color.hex.value)
-        }
+       
+            for(let i=0;i<data.colors.length;i++){
+               gridItems[i].style.backgroundColor = data.colors[i].hex.value
+            }
+        
+
+        
         
        
       })
