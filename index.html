@@ -9,6 +9,24 @@
     <title>Color Scheme Generator</title>
 </head>
 <body>
-    <script src="javascript/script.js"></script>
+  <main>
+    <section class="picking-area">
+    <form id="formOfInfo" action="">
+      <input class="color-picker" id="colorPicker" type="color" value="#F55A5A">
+      <select class="select-style" name="scheme" id="scheme">
+        <option selected value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+      </select>
+      <button class="select-style">Get color scheme</button>
+     </form>
+    </section>
+   <main>
+       
+   <script src="javascript/script.js"></script>
 </body>
 </html>
