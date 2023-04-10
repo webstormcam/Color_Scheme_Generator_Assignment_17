@@ -58,6 +58,8 @@ form{
 
 .color-grid{
     display: grid;
-    grid-template-columns: repeat(5,minmax(110px,1fr));
-    grid-template-rows: 500px
+    grid-template-columns: repeat(5, minmax(110px,1fr));
+    grid-template-rows: 500px 50px;
+    width: 100%;
+    max-width: 550px;
 }
