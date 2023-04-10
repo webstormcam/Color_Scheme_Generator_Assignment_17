@@ -20,6 +20,13 @@ select{
     margin: 0em 1em;
     padding: 0em 1em;
     cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/Icon.png');
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: 1.2em auto, 100%;
 }
 
 .select-style{
