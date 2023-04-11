@@ -58,7 +58,7 @@ form{
 
 .color-grid{
     display: grid;
-    grid-template-columns: repeat(5, minmax(110px,1fr));
+    grid-template-columns: repeat(5, minmax(50px,1fr));
     grid-template-rows: 500px 50px;
     width: 100%;
     max-width: 550px;
@@ -71,4 +71,35 @@ form{
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media  screen and (max-width:411px) {
+    .color-grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        width: 100%;
+    }
+
+   
+    .f{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .g{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .h{
+        grid-column-start: 2;
+        grid-row-start: 3; 
+    }
+
+    .i{
+        grid-column-start: 2;
+        grid-row-start: 4;  
+    }
+
+
 }
