@@ -72,3 +72,34 @@ form{
     font-weight: bold;
     cursor: pointer;
 }
+
+@media  screen and (max-width:411px) {
+    .color-grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        width: 100%;
+    }
+
+   
+    .f{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .g{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .h{
+        grid-column-start: 2;
+        grid-row-start: 3; 
+    }
+
+    .i{
+        grid-column-start: 2;
+        grid-row-start: 4;  
+    }
+
+
+}
