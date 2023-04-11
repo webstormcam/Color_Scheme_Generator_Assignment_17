@@ -2,6 +2,7 @@
 let colorPicked = document.getElementById('colorPicker')
 let scheme = document.getElementById('scheme')
 let gridItems = document.getElementsByClassName('grid-item')
+let colorCard = document.getElementsByClassName('grid-color-code')
 
 
 
@@ -13,6 +14,7 @@ function renderColors(colorHex,pickedSelection){
        
             for(let i=0;i<data.colors.length;i++){
                gridItems[i].style.backgroundColor = data.colors[i].hex.value
+               colorCard[i].innerHTML = data.colors[i].hex.value
             }
         
 
