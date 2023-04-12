@@ -4,11 +4,7 @@ let scheme = document.getElementById('scheme')
 let gridItems = document.getElementsByClassName('grid-item')
 let colorCard = document.getElementsByClassName('grid-color-code')
 
-for(const card of colorCard){
-    card.addEventListener('click',function(){
-        console.log(card.innerHTML)
-    })
-}
+
 
 
 function renderColors(colorHex,pickedSelection){
@@ -26,5 +22,16 @@ const formOfInfo = document.getElementById('formOfInfo').addEventListener('submi
     e.preventDefault()
     renderColors(colorPicked.value.slice(1),scheme.value)
 }) 
+
+
+for(const card of colorCard){
+    card.addEventListener('click',function(){
+        navigator.clipboard.writeText(card.innerHTML).then(function(){
+            alert("Copied the text: " + card.innerHTML);
+        })
+        
+
+    })
+}
 
 renderColors(colorPicked.value.slice(1),scheme.value)
