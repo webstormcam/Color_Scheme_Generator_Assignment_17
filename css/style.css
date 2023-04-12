@@ -73,6 +73,12 @@ form{
     cursor: pointer;
 }
 
+.grid-color-code:hover{
+    color: green;
+}
+
+
+
 @media  screen and (max-width:411px) {
     .color-grid{
         grid-template-columns: 50% 50%;
