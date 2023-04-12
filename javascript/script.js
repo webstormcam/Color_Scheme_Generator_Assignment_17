@@ -4,6 +4,12 @@ let scheme = document.getElementById('scheme')
 let gridItems = document.getElementsByClassName('grid-item')
 let colorCard = document.getElementsByClassName('grid-color-code')
 
+for(const card of colorCard){
+    card.addEventListener('click',function(){
+        console.log(card.innerHTML)
+    })
+}
+
 
 function renderColors(colorHex,pickedSelection){
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorHex}&mode=${pickedSelection}`)
